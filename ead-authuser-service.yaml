@@ -41,18 +41,6 @@ ead:
     exchange:
       userEvent: ead.userevent
 
-#teste para mudar no controller
-authuser:
-  refreshscope:
-    name: Diego Nogueira
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-          - refresh
-          - health
 
 resilience4j:
   circuitbreaker:
