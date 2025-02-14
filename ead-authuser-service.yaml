@@ -44,7 +44,7 @@ ead:
 #teste para mudar no controller
 authuser:
   refreshscope:
-    name: Diego Nogueira
+    name: Diego Nogueira Silva
 
 management:
   endpoints:
