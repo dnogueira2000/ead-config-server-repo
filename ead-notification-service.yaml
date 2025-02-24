@@ -6,12 +6,7 @@ server:
 spring:
   application:
     name: ead-notification-service
-  config:
-    import: 'optional:configserver:' #import: 'optional:configserver:' assim caso servico config server esteja fora, pega as config desse arquivo
-  cloud:
-    config:
-      discovery:
-        serviceId: ead-config-server
+
   datasource:
     url:  jdbc:postgresql://localhost:5432/ead-notification-v2
     username: postgres
@@ -57,9 +52,3 @@ management:
           - refresh
           - health
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: 'http://localhost:8761/eureka'
-  instance:
-    hostname: localhost
